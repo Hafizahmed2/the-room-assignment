@@ -1,0 +1,10 @@
+<!-- views/rides/show.html.erb -->
+
+<h1>Ride Details</h1>
+
+<p><strong>ID:</strong> <%= @ride.id %></p>
+<p><strong>Status:</strong> <%= @ride.status %></p>
+<p><strong>Start Address:</strong> <%= @ride.start_address %></p>
+<p><strong>Destination Address:</strong> <%= @ride.destination_address %></p>
+
+<%= link_to "Back", root_path, class: "btn btn-secondary" %>

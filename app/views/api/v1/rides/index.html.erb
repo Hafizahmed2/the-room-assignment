@@ -1,0 +1,19 @@
+<div class=" container">
+  <h1>Best Rides Searching For Driver</h1>
+  <table class="table table-striped">
+    <tr>
+      <th scope="col">Driving Distance</th>
+      <th scope="col">Driving Duration</th>
+      <th scope="col">Commute Distance</th>
+      <th scope="col">Commute Duration</th>
+      <th scope="col">Ride Distance</th>
+      <th scope="col">Ride Duration</th>
+      <th scope="col">Ride Earning</th>
+      <th scope="col">Score</th>
+    </tr>
+  <%= render partial: "ride", collection: @rides %>
+  </table>
+  <div class="d-flex justify-content-center">
+    <%= will_paginate @rides%>
+  </div>
+</div>

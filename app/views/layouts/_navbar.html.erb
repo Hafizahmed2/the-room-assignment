@@ -1,0 +1,17 @@
+<header class="p-3  text-white ">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/586/808/original/map-pointer-with-bicycle-rider-icon-illustration-vector.jpg"
+                    style="width: 90px" alt="logo">
+      </a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><%= link_to 'Home', root_path,class: "nav-link px-2 text-white" %> </li>
+      </ul>
+      <div class="text-end d-flex">
+          <%= link_to "Edit Profile", edit_account_registration_path, class: "btn btn-info me-3" %>
+          <%= button_to "Sign out", destroy_account_session_path, class: "btn btn-danger", method: :delete %>
+      </div>
+    </div>
+  </div>
+</header>

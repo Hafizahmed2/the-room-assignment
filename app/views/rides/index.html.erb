@@ -1,0 +1,22 @@
+<h1>Rides</h1>
+
+<%if @rides.length > 0%>
+  <table class="table table-striped">
+    <tr>
+      <th scope= "col">Status</th>
+      <th scope= "col">Start Address</th>
+      <th scope= "col">Destination Address</th>
+      <th scope= "col">Actions</th>
+    </tr>
+    <%= render partial: "ride", collection: @rides %>
+  </table>
+<% else %>
+  <div class="alert alert-info" role="alert">
+    There are no open rides yet!
+  </div>
+<% end %>
+
+<h1>You Can Find Nearest Rides</h1>
+  <%= link_to "Find Rides", rides_path(driver: current_account.id), class: "btn btn-info" %>
+
+
